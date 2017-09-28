@@ -6,3 +6,103 @@ Computer graphics makes stuff like unity etc
 Only place to basically be a renaissance person
 	- Art, Math, Vision, Optics, Biomechanics, Physics, Engineering, AI etc. 
 
+#Applications of CG
+Entertainment
+	- Films
+	- Computer Games
+	- VR
+Visualization
+	- Scientific Visualization
+	- Medical Visualization
+	- Flight Simulation
+	- Architecture
+Education etc. 
+
+#History
+2000 B.C. 
+	- Orthographic Projection
+		- The whole coming from a single point in a picture
+1400s
+	- Perspective
+
+...
+
+All stuff to say this has been going on for a long long time 
+
+#First Computer Game?
+Pong, Atari, 1972, not first!
+Spacewars, PDP-1, MIT, 1961 not first!
+Tennis for Two, 1958 first!
+
+#Games
+Focus on interactivity
+
+#Movies
+Can be used to generate a lot more in it 
+
+#Computer Aided Design
+Can also be used for simulation 
+
+#What is an Image/Video
+Array of Pixels, One or more nums
+A video is a time sequence of images 
+Made by
+	- Objects, Illumination, and an Imaging device
+
+#Basic Elements
+Modeling
+	- How do we moddel objects?
+	- How do we construct?
+Animation
+	- How do we represent motion?
+Rendering
+	- How do we simulate what it looks like?
+Interaction
+	- How do we enable the interaction?
+
+#Modeling
+Primitives
+	- 3D Points, lines, and curves
+	- Surfaces as polygons and patches
+	- Volumetric/Image-based representations
+
+Attributes
+	- Color Texture maps
+
+#Rendering
+Visibility
+	- Simulating light propagation
+		- Reflection, Absorption, Scattering, Emission, Interference
+
+#Animation
+Keyframe animation
+	- where certain frames are hand drawn and important
+Motion capture
+	- Capture a body movement as a baseline
+Procedural animation
+	- physics based or behavioral based 
+
+#Interaction 
+input output
+
+#Pipeline
+Modeling -> Rendering -> Interaction 
+
+#Modeling 
+many ways to do it, can be modeled any way you want
+Alter Geometric models
+	- needs to be changed/modified somehow 
+
+#Rendering
+Key Elements
+	- Illumination
+	- Geometric Shap and Reflectance
+	- Camera
+Use these to creat the pixel value
+
+
+Only need to draw the visible surfaces on display
+	- need to know camera location, direction, camera POV
+		- clip the parts that arent in the camera view anymore 
+
+Reflectance modeling, how it interacts with light differently 
