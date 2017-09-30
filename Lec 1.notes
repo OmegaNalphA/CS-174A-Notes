@@ -106,3 +106,31 @@ Only need to draw the visible surfaces on display
 		- clip the parts that arent in the camera view anymore 
 
 Reflectance modeling, how it interacts with light differently 
+
+#Cloth Simulation
+Have to go through almost every step irl to actually get the clothes to seem real 
+
+#Fluid Simulation
+Modeling 
+	- Incompressability
+	- Viscosity
+Navier-Stokes Equations
+	- Look this up, can't post here 
+Level Sets 
+
+#Smoke Simulation
+Assumptions
+	- No Viscosity
+Rendering
+	- Photon maps
+	- Multiple scattering 
+
+#Behavioral Animation
+Want every character to move on its own, don't want it to move individually 
+
+#Great! But what's next?
+Learn the Math
+Apply in 3 programming projects 
+	- written and coding sections
+Show that you understand the concept in 2 exams
+
