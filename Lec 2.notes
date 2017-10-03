@@ -1,0 +1,31 @@
+#Vectors
+
+#Column Vs. Row Vectors
+	Always dictated with a transpose
+
+Vectors are N-tuples, they have magnitudes etc
+	- magnitudes is just square root of all values squared and summed 
+	- unit vector too
+
+#Vector-Vector addition
+Parallelogram rule
+	- tail to head, complete the triangle
+	- u+v = v+u
+	- add compnents to their direct compnents
+		- [x,y] + [z,a] = [x+z, y+a]
+
+#Vector-Vector subtraction
+Essentially, adding a negatively scaled vector 
+
+#Operations with Vectors
+addition
+	- above
+Mult with scalar
+	- a(X) = [ax1, ax2, ax3, ...]
+Properties
+	- Commutative 
+		- u+v = v+u
+	- Associative
+		- u + (v + w) = (u + v) + w
+	- Distributive
+		- 
