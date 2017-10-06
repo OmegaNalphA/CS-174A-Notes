@@ -1,0 +1,94 @@
+#Motivation
+We do need math to compute graphics
+	- will go out of our way to write things as matrices
+
+#Vectors Add & Subtract
+Review of last lecture
+
+#Special Cases
+Linear Combo 
+	w = a1v1 + ... amvm where a1 ... am in R 
+
+Affine Combo
+	a1 ...  + am = 1
+
+#Vectors Dot (Scalar) Product
+Can find angle between Vectors
+Finding projection on another vector 
+
+Fastest is a * b = sum(anbn, n = 1, N)
+
+Review of last lecture/math
+
+#Cross Product 
+Review of Last lecture
+Important part here is that it can define an area of a zone 
+
+#Matrix Multiplication
+Every R,C is the dot product of the row in the first one with the col in the second one 
+AB !=! BA DNE 
+
+But Multiplication order does not remember 
+
+#Modeling Transforms and Primitives
+Primitives are
+	Square
+	Circle
+	Plane etc
+
+Transforms move the objects 
+
+#Why Transforms
+Need it to model objects
+Use it to 
+	Place objects in world 
+	describe relative positions of objects 
+	scale, rotate, etc 
+
+All the math for these is in matrices 
+	Ch 6, worthwhile but not essential 
+
+#Scaling 
+Uniform
+Same scale to x & y 
+
+non-uniform scaling: x & y are different
+
+Scaling op: (x', y') = (ax, by)
+
+only works with |a 0|
+				|0 b|
+
+Lets say we want to reflect across X axis
+
+|x'| = |1 0
+|y'|   |0 -1
+
+Shear 
+Push points to right in proportion to height 
+|1 a| <= this changes the scale of a couple points and shears it 
+|0 1|
+
+#2D Rotation 
+A bunch of different formulas, check the notes 
+x' = xcos(theta) - y sin(theta)
+y' = xsin(theta) + y cos(theta)
+
+#Linear Transformations 
+All have a matrix form, but can be thought of as 2d coordinate system 
+Check notes for this one as well
+But the matrixes in front of vectors teach you a lot about what an object will be 
+
+All of them have the form of 
+x'	a b |x
+y' =c d |y
+use for scale shear rotation etc 
+
+T(sx + ty) = sT(x) + tT(y)
+origin always maps to origin, never gets changed 
+lines map to lines 
+parallel lines remain parallel
+ratios are preserved
+-Closed Under Composition-
+Any type of transformation multiplied together will always result in another linear transformation
+

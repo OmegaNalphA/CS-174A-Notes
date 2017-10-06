@@ -1,7 +1,8 @@
 #Vectors
+	- essential for any graphics interpretation
 
 #Column Vs. Row Vectors
-	Always dictated with a transpose
+Always dictated with a transpose
 
 Vectors are N-tuples, they have magnitudes etc
 	- magnitudes is just square root of all values squared and summed 
@@ -20,12 +21,92 @@ Essentially, adding a negatively scaled vector
 #Operations with Vectors
 addition
 	- above
+
 Mult with scalar
 	- a(X) = [ax1, ax2, ax3, ...]
+
 Properties
 	- Commutative 
 		- u+v = v+u
 	- Associative
 		- u + (v + w) = (u + v) + w
 	- Distributive
-		- 
+		
+#Special Cases
+Linear combination
+	- w = a1v1 + ... amvm, a1....am in IR 
+Affine combination
+	- a linear combo where vector = 1
+
+Linear Independence: vectors that can only be 0 when the scalars are 0, no time else 
+
+#Dot Product
+Find angle between two vectors 
+
+Finding projection of one vector on another 
+
+Can be computed super easily 
+
+Geometrically, it is a projection of that vector on another vector in the direction of that vector
+
+/|
+-----
+^ If that makes any sense 
+
+This lets us easily compute the theta angle since projection is just 
+u (dot) v/|v| = |u|cos(theta)
+
+Can do it in cartesian coordinates, but you do lose info
+- with dot product (dp) we know we get closer to 90 degrees since dp gets closer to 0
+
+#dot product scalar
+[6, 1, 2] * [1,7,3]
+= 6*1 + 1*7 + 2*3 = 19
+
+dot product: a * b = sum(a^n*b^n, n=1, N)
+REMEMBER THIS 
+	This pops up a lot, and the first instict will be to do a for loop, but make sure to recognize it and just do dot product!
+
+#Properties
+	1) Symmetry: a * b = b * a
+	2) Linearity: (a+b)*c = a*c + b*c
+	3) Homogeneity: (sa)*b = s(a*b) (scalar = s)
+	4) |b|^2 = b * b
+		- don't do this component by component pls
+	5) a * b = |a||b|cos(theta)
+
+#Orthogonal Vectors
+A * B = 0 then perpendicular
+- standard unit vectors form Orthogonal basis
+	- i, j, k
+
+#Cross Product
+Vector orthogonal to two initial vectors 
+	- direction determined by right hand rule (RHR)
+	- useful in constructing coordinate systems (later)
+
+Defined for only 3D vectors
+		|i  j  k |
+a x b = |a1 a2 a3|
+		|b1 b2 b3|
+
+cross it all over
+
+#Properties
+	1) i x j = k, i x k = -j, j x k = i 
+	2) Antisymmetry: a x b = -b x a 
+	3) Linearity: a x (b + c) = a x b + a x c 
+	4) Homogeneity: (sa) x b = s(a x b)
+	5) The cross product is normal to both vectors
+		- (a x b) * a = 0 = (a x b) * b = 0
+		- IF THIS DOESNT HAPPEN there is a bug in your code, use this as a debugger 
+	6) |a x b| = |a||b|sin(theta)
+
+---Missed a lot of the lecture---
+
+#Matrix Multiplication
+Essentially dot products of every breakdown possible 
+Number of columns in first one MUST = rows in second
+
+Element i,j in product is dot product of row i of first matric and column j of second matrix 
+
